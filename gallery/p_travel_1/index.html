@@ -10,37 +10,37 @@ images:
    caption: Double rainbow
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_2.jpg
-   caption: IMAGE TITLE
+   caption: Colors
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_3.jpg
-   caption: IMAGE TITLE
+   caption: Blues
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_4.jpg
-   caption: IMAGE TITLE
+   caption: Bike Ride
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_5.jpg
-   caption: IMAGE TITLE
+   caption: Road to the Heaven
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_6.jpg
-   caption: IMAGE TITLE
+   caption: Edge
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_7.jpg
-   caption: IMAGE TITLE
+   caption: Falling Stones
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_8.jpg
-   caption: IMAGE TITLE
+   caption: Mountains
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_9.jpg
-   caption: IMAGE TITLE
+   caption: Into the green
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_10.jpg
-   caption: IMAGE TITLE
+   caption: Heavenly
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_11.jpg
-   caption: IMAGE TITLE
+   caption: Silent Lake
    copyright: © thoshith
  - image_path: /gallery/p_travel_1/p_travel_1_12.jpg
-   caption: IMAGE TITLE
+   caption: Blooms
    copyright: © thoshith
 ---
 
@@ -50,7 +50,7 @@ images:
 </head>
 
     <body>
- 
+
 	<section id="content" role="main">
 		<div class="wrapper">
 	<br><br>
@@ -59,16 +59,16 @@ images:
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+
+{% for image in page.images %}
 
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
+
+					</header>
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary" id="{{ image.caption }}">
 							<h3>{{image.caption}}</h3>
@@ -76,7 +76,7 @@ images:
 						</div>
 					</figcaption>
 				</figure>
-				
+
 {% endfor %}
 
 			</div>
@@ -84,7 +84,7 @@ images:
 		</div><!-- END .wrapper -->
 	</section>
 
-<!-- jQuery -->    
+<!-- jQuery -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
@@ -111,7 +111,7 @@ image: {
 
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -123,5 +123,5 @@ image: {
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    
+
 </body></html>
